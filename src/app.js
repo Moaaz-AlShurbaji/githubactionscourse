@@ -5,7 +5,7 @@ function Greet(name)
 
 module.exports = Greet;
 
-if(require.main === module)
+/*if(require.main === module)
 {
     console.log(Greet("world"));
-}
+}*/

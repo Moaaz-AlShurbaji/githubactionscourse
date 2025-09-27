@@ -9,9 +9,9 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
         node_version: [14.x, 15.x, 16.x]
-    runs-on: ${{ martix.os }}  
+    runs-on: ${{ matrix.os }}  
     steps:
     - uses: actions/setup-node@v5.0.0
       with:
-        node-version: ${{ martix.node_version }}
+        node-version: ${{ matrix.node_version }}
   
